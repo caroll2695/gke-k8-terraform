@@ -2,8 +2,8 @@
 
 resource "google_container_cluster" "cluster" {
   name               = var.cluster_name
-  zone               = var.zone
-  network            = "cloudgenius"
+  location           = var.zone
+  network            = "hangar312"
   subnetwork         = "cg"
   min_master_version = var.min_master_version
 

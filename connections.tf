@@ -3,7 +3,7 @@
 provider "google" {
   version = "~> 2.11"
 
-  credentials = file("~/.creds/oceanic-isotope-233522-9faaa81f7372.json")
-  project     = "oceanic-isotope-233522"
+  credentials = file("~/.creds/csglabs26-67b678b3cb13.json")
+  project     = "csglabs26"
   region      = var.region
 }

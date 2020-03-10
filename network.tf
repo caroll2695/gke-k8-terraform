@@ -1,11 +1,11 @@
-resource "google_compute_network" "cloudgenius" {
-  name                    = "cloudgenius"
+resource "google_compute_network" "hangar312" {
+  name                    = "hangar312"
   auto_create_subnetworks = false
 }
 
 resource "google_compute_subnetwork" "cg" {
   name          = "cg"
-  network       = "cloudgenius"
+  network       = "hangar312"
   ip_cidr_range = "10.64.0.0/19"
   region        = var.region
 
@@ -19,6 +19,5 @@ resource "google_compute_subnetwork" "cg" {
     ip_cidr_range = "10.94.0.0/18"
   }
 
-  depends_on = [google_compute_network.cloudgenius]
+  depends_on = [google_compute_network.hangar312]
 }
-
