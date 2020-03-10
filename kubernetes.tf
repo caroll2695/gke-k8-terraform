@@ -5,7 +5,7 @@ resource "google_container_cluster" "cluster" {
   location           = var.zone
   network            = "hangar312"
   subnetwork         = "cg"
-  min_master_version = var.min_master_version
+  # min_master_version = var.min_master_version
 
   ##  remove_default_node_pool = true
 
